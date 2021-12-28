@@ -13,7 +13,6 @@ public class SwitchCharacterScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		// anable first avatar and disable another one
 		avatar1.gameObject.SetActive (false);
 		avatar2.gameObject.SetActive (false);
 		avatar3.gameObject.SetActive(true);

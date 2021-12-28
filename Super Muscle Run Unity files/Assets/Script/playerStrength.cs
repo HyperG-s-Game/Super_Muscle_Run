@@ -24,7 +24,7 @@ public class playerStrength : MonoBehaviour
     {
         if(other.gameObject.tag == "FinishLine")
         {
-            rb.AddForce(0, 0, strenght * 100);
+            rb.AddForce(0, 0, strenght * 5, ForceMode.Impulse);
             print("forece");
 
         }
