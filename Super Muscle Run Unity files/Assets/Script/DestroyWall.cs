@@ -12,6 +12,7 @@ public class DestroyWall : MonoBehaviour
         {
             if (other.gameObject.GetComponent<playerStrength>().strenght >= 3)
             {
+               
                 other.gameObject.GetComponent<playerStrength>().strenght -= 1;
                 Destroy(gameObject);
             }
