@@ -10093,6 +10093,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 829048876, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0819fee73d6328c40ba9f9a6c2cfd9b1, type: 2}
+    - target: {fileID: 1477214627, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 41e7ac8b79c59bf429b70266786acc81, type: 2}
+    - target: {fileID: 1973994770, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 675060b75ee24964ebc068619fa24f36, type: 2}
     - target: {fileID: 119949811189199628, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
       propertyPath: strengthBar
       value: 
