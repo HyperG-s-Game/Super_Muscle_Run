@@ -8308,6 +8308,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 119949811189199635, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 119949811189199635, guid: bc52b60dc2b620c43a3dfdd9ea7f4b55, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 405365385}
