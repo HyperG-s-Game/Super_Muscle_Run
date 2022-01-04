@@ -9,6 +9,7 @@ TagManager:
   - GreenCube
   - Walls
   - FinishLine
+  - Trampolin
   layers:
   - Default
   - TransparentFX
