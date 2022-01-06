@@ -8,7 +8,7 @@ public class playerStrength : MonoBehaviour
     public int strenght = 0;
     public Text strengthText;
     Rigidbody rb;
-    public Image strengthBar;
+    public Image bar;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class playerStrength : MonoBehaviour
     private void Update()
     {
         strengthText.text = "Strenght : " + strenght.ToString();
-        strengthBar.fillAmount = (float)strenght / 10;
+        bar.fillAmount = (float)strenght / 10;
 
     }
    

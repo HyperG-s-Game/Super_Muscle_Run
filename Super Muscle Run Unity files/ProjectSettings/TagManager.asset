@@ -10,6 +10,10 @@ TagManager:
   - Walls
   - FinishLine
   - Trampolin
+  - BarrriCade
+  - GymCycle
+  - Rod
+  - Ladder
   layers:
   - Default
   - TransparentFX
