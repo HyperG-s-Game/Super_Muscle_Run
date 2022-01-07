@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class increaseStrength : MonoBehaviour
 {
+    public int strengthValueToIncrease = 1;
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<playerStrength>().strenght += 1;
+            other.gameObject.GetComponent<playerStrength>().strenght += strengthValueToIncrease;
             Destroy(gameObject);
         }
     }

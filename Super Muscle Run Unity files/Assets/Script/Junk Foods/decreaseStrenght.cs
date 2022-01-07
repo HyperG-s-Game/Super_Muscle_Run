@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class decreaseStrenght : MonoBehaviour
 {
+    public int strengthValueToDecrease = 1;
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {   
             if(other.gameObject.GetComponent<playerStrength>().strenght > 0)
             {
-                other.gameObject.GetComponent<playerStrength>().strenght -= 1;
+                other.gameObject.GetComponent<playerStrength>().strenght -= strengthValueToDecrease;
             }
             Destroy(gameObject);
         }

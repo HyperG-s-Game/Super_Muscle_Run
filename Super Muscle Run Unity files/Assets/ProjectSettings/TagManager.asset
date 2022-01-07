@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - RedCube
-  - GreenCube
-  - Walls
-  - FinishLine
-  - Trampolin
-  - BarrriCade
-  - GymCycle
-  - Rod
-  - Ladder
+  tags: []
   layers:
   - Default
   - TransparentFX

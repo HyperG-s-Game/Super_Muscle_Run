@@ -5,15 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DestroyWall : MonoBehaviour
 {
+    public int minimumStrenghtValueToBreakTheWall = 3;
+    public int strengthValueToDecreaseAfterDestroyingTheWall = 1;
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (other.gameObject.GetComponent<playerStrength>().strenght >= 3)
+            if (other.gameObject.GetComponent<playerStrength>().strenght >= minimumStrenghtValueToBreakTheWall)
             {
                
-                other.gameObject.GetComponent<playerStrength>().strenght -= 1;
+                other.gameObject.GetComponent<playerStrength>().strenght -= strengthValueToDecreaseAfterDestroyingTheWall;
                 Destroy(gameObject);
             }
             else 

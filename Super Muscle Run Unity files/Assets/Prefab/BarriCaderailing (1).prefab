@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4089023011450272461}
   - component: {fileID: 4089023011450272498}
   - component: {fileID: 6548699213758724381}
+  - component: {fileID: 8390970607033280280}
   m_Layer: 0
   m_Name: BarriCaderailing (1)
-  m_TagString: Untagged
+  m_TagString: BarrriCade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.093168944, y: 0.7430823, z: 7.153623}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8390970607033280280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089023011450272496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fe820aa43c361479f5937be3293a81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
