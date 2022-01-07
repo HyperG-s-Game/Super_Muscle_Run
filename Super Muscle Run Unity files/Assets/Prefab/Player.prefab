@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d877ec0494c99408dc666d47f4a4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar1: {fileID: 919132149155446097, guid: 06df5107c336b734aa233946771871c8, type: 3}
+  avatar1: {fileID: 919132149155446097, guid: 74449a79edd57d844b60ae6119779c2f, type: 3}
   avatar2: {fileID: 4346119664753475699}
   avatar3: {fileID: 1578175567552893244}
   avatar4: {fileID: 966950548106555401}
