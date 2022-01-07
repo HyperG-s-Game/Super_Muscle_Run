@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7921036300405264292}
   - component: {fileID: 7921036300405264295}
   - component: {fileID: 6994896846456350387}
-  - component: {fileID: 6801253300010456373}
   m_Layer: 0
   m_Name: Deadlift ROd
   m_TagString: Rod
@@ -110,15 +109,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.98115003, y: 0.53528976, z: 0.53531253}
   m_Center: {x: 0.0000012069942, y: 0.000000029802322, z: -0.00000052154064}
---- !u!114 &6801253300010456373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7921036300405264314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f5741053b51c44fab42bb112d3ce90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

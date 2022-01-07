@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1875795658857627663}
   - component: {fileID: 1875795658857627662}
   - component: {fileID: 1875795658857627649}
-  - component: {fileID: 1875795658857627661}
+  - component: {fileID: 1416121369823741299}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.3857837, y: 2.610646, z: 0.14617187}
   m_Center: {x: 0.00000047683716, y: 0, z: -0.00000010430813}
---- !u!114 &1875795658857627661
+--- !u!114 &1416121369823741299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,3 +108,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e36efe859dd2468d9d6d5e4a06c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumStrenghtValueToBreakTheWall: 3
+  strengthValueToDecreseAfterDestroyingTheWall: 1
