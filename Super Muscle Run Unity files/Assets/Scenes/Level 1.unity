@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -752,6 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!1 &248002332
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &248002335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1302,6 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &299765861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3639,6 +3642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &815427265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7658,6 +7662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &2040680461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7766,6 +7771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &2045280366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8248,6 +8254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!1001 &2106349819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8448,6 +8455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e36efe859dd2468d9d6d5e4a06c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumStrenghtValueToBreakTheWall: 3
+  strengthValueToDecreseAfterDestroyingTheWall: 1
 --- !u!64 &2123678136
 MeshCollider:
   m_ObjectHideFlags: 0
