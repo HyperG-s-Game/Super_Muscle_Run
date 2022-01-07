@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &53867762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -425,6 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &55371897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -619,6 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &125530595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -854,6 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &158033427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -976,6 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &207704325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1146,6 +1151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!1 &237384317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &237384320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1462,6 +1469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &256004118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1651,6 +1659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &282328857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2116,6 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &390049048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2370,6 +2380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &438070611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2492,6 +2503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &442275278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2681,6 +2693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &501276138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2775,6 +2788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &506863573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2978,6 +2992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &577530985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3133,8 +3148,8 @@ GameObject:
   - component: {fileID: 613404319}
   - component: {fileID: 613404318}
   - component: {fileID: 613404317}
-  - component: {fileID: 613404316}
   - component: {fileID: 613404315}
+  - component: {fileID: 613404316}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Walls
@@ -3184,7 +3199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e36efe859dd2468d9d6d5e4a06c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumStrenghtValueToBreakTheWall: 0
+  minimumStrenghtValueToBreakTheWall: 3
+  strengthValueToDecreaseAfterDestroyingTheWall: 1
 --- !u!65 &613404317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3897,6 +3913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &753774411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3991,6 +4008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &774621698
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4113,6 +4131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &778524409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4221,6 +4240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &790142277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4410,6 +4430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &942830784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4703,6 +4724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &977091651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4825,6 +4847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &977831220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4933,6 +4956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &999588903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5332,6 +5356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &1088546442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5492,6 +5517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1104094764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5949,6 +5975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1188751233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6476,6 +6503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1413983360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6884,6 +6912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1498762677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7168,6 +7197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &1567415013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7423,6 +7453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1733546127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7531,6 +7562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &1769167807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7639,6 +7671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!65 &1786429830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7713,8 +7746,8 @@ GameObject:
   - component: {fileID: 1791745206}
   - component: {fileID: 1791745205}
   - component: {fileID: 1791745204}
-  - component: {fileID: 1791745203}
   - component: {fileID: 1791745208}
+  - component: {fileID: 1791745203}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Walls
@@ -7734,7 +7767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e36efe859dd2468d9d6d5e4a06c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumStrenghtValueToBreakTheWall: 0
+  minimumStrenghtValueToBreakTheWall: 3
+  strengthValueToDecreaseAfterDestroyingTheWall: 1
 --- !u!65 &1791745204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7874,6 +7908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &1817450231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8334,6 +8369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af34bfaaba1fef04da3f83933dd022ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToDecrease: 1
 --- !u!65 &1932041599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9234,6 +9270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strengthValueToIncrease: 1
 --- !u!1 &2116466853
 GameObject:
   m_ObjectHideFlags: 0
@@ -9327,8 +9364,8 @@ GameObject:
   - component: {fileID: 2122809312}
   - component: {fileID: 2122809311}
   - component: {fileID: 2122809310}
-  - component: {fileID: 2122809309}
   - component: {fileID: 2122809308}
+  - component: {fileID: 2122809309}
   m_Layer: 0
   m_Name: Wall (3)
   m_TagString: Walls
@@ -9378,7 +9415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3e36efe859dd2468d9d6d5e4a06c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumStrenghtValueToBreakTheWall: 0
+  minimumStrenghtValueToBreakTheWall: 3
+  strengthValueToDecreaseAfterDestroyingTheWall: 1
 --- !u!65 &2122809310
 BoxCollider:
   m_ObjectHideFlags: 0

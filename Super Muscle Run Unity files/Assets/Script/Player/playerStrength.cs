@@ -22,16 +22,6 @@ public class playerStrength : MonoBehaviour
 
     }
    
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "FinishLine")
-        {
-            rb.AddForce(0, 0, strenght * 5, ForceMode.Impulse);
-            print("forece");
-
-        }
-
-    }
 
     
 }

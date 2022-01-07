@@ -9,6 +9,9 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
     int redCube = 0;
     int greenCube = 0;
 
+    public int minRedCubeToChange = 3;
+    public int minGreenCubeToChange = 3;
+
     private void Start()
     {
         switchCharacterScript = FindObjectOfType<SwitchCharacterScript>();
@@ -19,7 +22,7 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
         if(other.tag == "RedCube")
         {
             redCube++;
-            if (redCube == 3) 
+            if (redCube == minRedCubeToChange) 
             {
                 print("triggered with red cube");
                 switchCharacterScript.Fat();
@@ -30,7 +33,7 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
         if(other.tag == "GreenCube")
         {
             greenCube++;
-            if(greenCube == 3)
+            if(greenCube == minGreenCubeToChange)
             {
                 print("triggered with green cube");
                 switchCharacterScript.Muscle();
