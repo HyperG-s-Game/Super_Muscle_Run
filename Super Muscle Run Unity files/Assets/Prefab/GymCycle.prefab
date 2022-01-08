@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8492234292091011027
+--- !u!1 &6000174848067011563
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,78 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9120258414026024297}
-  - component: {fileID: 5277780202385500876}
-  - component: {fileID: 7987844672474455558}
-  - component: {fileID: 8726590459879916164}
-  - component: {fileID: 8726590459962138756}
+  - component: {fileID: 6968896239620965742}
   m_Layer: 0
-  m_Name: gym cycle
-  m_TagString: GymCycle
+  m_Name: GymCycle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9120258414026024297
+--- !u!4 &6968896239620965742
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8492234292091011027}
-  m_LocalRotation: {x: 0.431513, y: -0.56013566, z: 0.56033117, w: 0.43136245}
-  m_LocalPosition: {x: -0.28109, y: 1.62, z: -20.282}
-  m_LocalScale: {x: -2.3240185, y: -2.3240185, z: -2.3240185}
-  m_Children: []
+  m_GameObject: {fileID: 6000174848067011563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.62, z: -5.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8009059491471802080}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7236780479072298074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8009059491471802080}
+  - component: {fileID: 6379980787221705029}
+  - component: {fileID: 9182498726545606031}
+  - component: {fileID: 7543349403975211277}
+  - component: {fileID: 7543349404228877069}
+  m_Layer: 0
+  m_Name: gym cycle
+  m_TagString: GreenCube
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8009059491471802080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236780479072298074}
+  m_LocalRotation: {x: 0.431513, y: -0.56013566, z: 0.56033117, w: 0.43136245}
+  m_LocalPosition: {x: 0, y: 3.54, z: -11.1}
+  m_LocalScale: {x: -2.3240185, y: -2.3240182, z: -2.3240182}
+  m_Children: []
+  m_Father: {fileID: 6968896239620965742}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 89.98, y: 75.2, z: 180}
---- !u!33 &5277780202385500876
+--- !u!33 &6379980787221705029
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8492234292091011027}
+  m_GameObject: {fileID: 7236780479072298074}
   m_Mesh: {fileID: -7605297073009099802, guid: dd2d810e221b1c547b29c02a7df5dd2b, type: 3}
---- !u!23 &7987844672474455558
+--- !u!23 &9182498726545606031
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8492234292091011027}
+  m_GameObject: {fileID: 7236780479072298074}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,26 +116,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8726590459879916164
+--- !u!114 &7543349403975211277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8492234292091011027}
+  m_GameObject: {fileID: 7236780479072298074}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 249f708ccdf98f943ada8da79e8d6521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strengthValue: 1
---- !u!65 &8726590459962138756
+  strengthValueToIncrease: 1
+--- !u!65 &7543349404228877069
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8492234292091011027}
+  m_GameObject: {fileID: 7236780479072298074}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
