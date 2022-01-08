@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6994896846456350387}
   m_Layer: 0
   m_Name: Deadlift ROd
-  m_TagString: Rod
+  m_TagString: GreenCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

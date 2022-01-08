@@ -396,10 +396,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deadlift ROd (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7921036300405264314, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
-      propertyPath: m_TagString
-      value: GreenCube
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
 --- !u!1001 &568060172
@@ -638,10 +634,6 @@ PrefabInstance:
     - target: {fileID: 7921036300405264314, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
       propertyPath: m_Name
       value: Deadlift ROd
-      objectReference: {fileID: 0}
-    - target: {fileID: 7921036300405264314, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
-      propertyPath: m_TagString
-      value: GreenCube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
@@ -985,10 +977,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deadlift ROd (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7921036300405264314, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
-      propertyPath: m_TagString
-      value: GreenCube
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
 --- !u!1001 &2094839307976849710
@@ -1114,7 +1102,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4977781914361260817, guid: e9738976813600747bbfae36f8e3a98a, type: 3}
       propertyPath: m_Name
-      value: Bell
+      value: Bell 1
       objectReference: {fileID: 0}
     - target: {fileID: 4977781914361260830, guid: e9738976813600747bbfae36f8e3a98a, type: 3}
       propertyPath: m_RootOrder
@@ -1130,7 +1118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977781914361260830, guid: e9738976813600747bbfae36f8e3a98a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.17
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 4977781914361260830, guid: e9738976813600747bbfae36f8e3a98a, type: 3}
       propertyPath: m_LocalRotation.w
