@@ -1112,6 +1112,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1665990887, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 793690e874fe5964aa6451e17e0f460a, type: 3}
+    - target: {fileID: 873980643345196950, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 873980643345196950, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
     - target: {fileID: 6371817334502356971, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1200,7 +1212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 1271284660873395784, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
+    - {fileID: 873980643345196950, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42d14e110f53c3146959e3566250dfa3, type: 3}
 --- !u!1 &1790493252
 GameObject:
@@ -1643,7 +1658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1875795658857627660, guid: 405b93b3f5d85624d8bd0d643673bcc1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7
+      value: 19.7
       objectReference: {fileID: 0}
     - target: {fileID: 1875795658857627660, guid: 405b93b3f5d85624d8bd0d643673bcc1, type: 3}
       propertyPath: m_LocalRotation.w

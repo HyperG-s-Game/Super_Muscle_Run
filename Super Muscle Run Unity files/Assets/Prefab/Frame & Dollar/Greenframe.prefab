@@ -108,7 +108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284428119321730323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd3973e44494db84fb59fb33f2afd2ef, type: 3}
+  m_Script: {fileID: 11500000, guid: d8353efdde74aaf45925394a69cbd66c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyAfterSec: 0.2
@@ -281,6 +281,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1916532592711141289}
     m_Modifications:
+    - target: {fileID: 4631692294343266708, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
+      propertyPath: soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: da879af22d2e7a947950dc08c232be79, type: 3}
     - target: {fileID: 7921036300405264294, guid: 07de4e82b1e7d7d4e836d54d61d59186, type: 3}
       propertyPath: m_RootOrder
       value: 2

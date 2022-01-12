@@ -7,6 +7,8 @@ public class Jump : MonoBehaviour
     public float jumpForce = 3f;
     Rigidbody rb;
 
+    public AudioSource jumpAudio;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -17,6 +19,7 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.tag == "Trampolin")
         {
             rb.AddForce(transform.up * jumpForce);
+            jumpAudio.Play();
 
         }
     }

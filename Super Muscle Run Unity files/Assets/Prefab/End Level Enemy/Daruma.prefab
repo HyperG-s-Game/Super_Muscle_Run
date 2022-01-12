@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 0
+  player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!54 &6628926685601853625
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -236,4 +238,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44e65aaaedb1f24d9356a125c580589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundClip: {fileID: 8300000, guid: 6e9782a4d60a4d3439e2bb1f0fd20a02, type: 3}
+  soundClip: {fileID: 8300000, guid: 84e189aabbc64b047a63c49ff1194afc, type: 3}
