@@ -5,12 +5,23 @@ using UnityEngine;
 public class increaseStrength : MonoBehaviour
 {
     public int strengthValueToIncrease = 1;
+
+    public MeshRenderer meshRenderer;
+
+    public GameObject particleFX;
+
+    private void Start()
+    {
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<playerStrength>().strenght += strengthValueToIncrease;
-            Destroy(gameObject);
+            meshRenderer.enabled = false;
+            Instantiate(particleFX, transform.position, Quaternion.identity);
+            Destroy(gameObject, 1f);
         }
     }
 }

@@ -7,23 +7,49 @@ public class ForceTaken : MonoBehaviour
     Rigidbody rb;
     playerStrength playerStrengthScript;
     [SerializeField] int force;
+    GameFlow gameFlowScript;
+
+    public GameObject player;
+    public Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        playerStrengthScript = FindObjectOfType<playerStrength>();       
+        playerStrengthScript = FindObjectOfType<playerStrength>();
+        gameFlowScript = FindObjectOfType<GameFlow>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
         force = playerStrengthScript.strenght;
+
+        if(player != null)
+        {
+            animator = player.GetComponentInChildren<Animator>();
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-                rb.AddForce(transform.forward * force * 10 , ForceMode.Impulse);
+            //trigger the PUNCH animation
+            animator.SetTrigger("punch");
+
+            StartCoroutine(WaitAndAddForce());
+
+            collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
+
+            //restart level 
+            gameFlowScript.Restart();
         }
+    }
+
+    IEnumerator WaitAndAddForce()
+    {
+        yield return new WaitForSeconds(0.7f);
+        rb.AddForce(transform.forward * force * 10, ForceMode.Impulse);
     }
 }

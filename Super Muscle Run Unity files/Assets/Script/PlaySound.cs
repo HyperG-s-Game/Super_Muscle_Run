@@ -20,4 +20,13 @@ public class PlaySound : MonoBehaviour
             source.PlayOneShot(soundClip);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            source.PlayOneShot(soundClip);
+        }
+    }
+
 }

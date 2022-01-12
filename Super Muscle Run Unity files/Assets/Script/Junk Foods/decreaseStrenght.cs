@@ -5,7 +5,16 @@ using UnityEngine;
 public class decreaseStrenght : MonoBehaviour
 {
     public int strengthValueToDecrease = 1;
-   
+
+    public MeshRenderer meshRenderer;
+
+    public GameObject particleFX;
+
+    private void Start()
+    {
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -14,7 +23,9 @@ public class decreaseStrenght : MonoBehaviour
             {
                 other.gameObject.GetComponent<playerStrength>().strenght -= strengthValueToDecrease;
             }
-            Destroy(gameObject);
+            meshRenderer.enabled = false;
+            Instantiate(particleFX, transform.position, Quaternion.identity);
+            Destroy(gameObject,1f);
         }
     }
 }

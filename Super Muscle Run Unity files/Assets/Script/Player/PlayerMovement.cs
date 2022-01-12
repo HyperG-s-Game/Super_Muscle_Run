@@ -9,6 +9,12 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 10.0f;
     public int score = 0;
     public Text scoreText;
+    GameFlow gameFlowScript;
+
+    private void Start()
+    {
+        gameFlowScript = FindObjectOfType<GameFlow>();
+    }
 
     void Update()
     {
@@ -29,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position.y <= -2f)
         {
             //Restart the level
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameFlowScript.Restart();
         }
     }
 }

@@ -7,6 +7,12 @@ public class DestroyWall : MonoBehaviour
 {
     public int minimumStrenghtValueToBreakTheWall = 3;
     public int strengthValueToDecreseAfterDestroyingTheWall = 1;
+    GameFlow gameFlowScript;
+
+    private void Start()
+    {
+        gameFlowScript = FindObjectOfType<GameFlow>();
+    }
 
     private void OnCollisionEnter(Collision other)
     {
@@ -23,8 +29,7 @@ public class DestroyWall : MonoBehaviour
                 Destroy(other.gameObject,0.2f);
 
                 //Restart the level
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+                gameFlowScript.Restart();
             }
         }
     }
