@@ -42,8 +42,7 @@ public class ForceTaken : MonoBehaviour
 
             collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
 
-            //restart level 
-            gameFlowScript.Restart();
+            
         }
     }
 
@@ -51,5 +50,8 @@ public class ForceTaken : MonoBehaviour
     {
         yield return new WaitForSeconds(0.7f);
         rb.AddForce(transform.forward * force * 10, ForceMode.Impulse);
+
+        //restart level 
+        gameFlowScript.Restart();
     }
 }
