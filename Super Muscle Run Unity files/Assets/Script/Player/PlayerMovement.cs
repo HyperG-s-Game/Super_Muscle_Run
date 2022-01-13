@@ -10,10 +10,12 @@ public class PlayerMovement : MonoBehaviour
     public int score = 0;
     public Text scoreText;
     GameFlow gameFlowScript;
+    Rigidbody rb;
 
     private void Start()
     {
         gameFlowScript = FindObjectOfType<GameFlow>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -24,10 +26,6 @@ public class PlayerMovement : MonoBehaviour
         float MoveHorizontal = Input.GetAxis("Horizontal") * speed;
         
         MoveHorizontal *= Time.deltaTime;
-        
-
-        // Move the Player forward with speed
-        transform.Translate(0, 0, speed * Time.deltaTime);
 
         //Move the Player Left Right
         transform.Translate(MoveHorizontal, 0, 0);
@@ -37,5 +35,12 @@ public class PlayerMovement : MonoBehaviour
             //Restart the level
             gameFlowScript.Restart();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        // Move the Player forward with speed
+        rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, speed);
+
     }
 }

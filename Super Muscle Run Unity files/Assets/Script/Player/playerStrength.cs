@@ -7,12 +7,10 @@ public class playerStrength : MonoBehaviour
 {
     public int strenght = 0;
     public Text strengthText;
-    Rigidbody rb;
     public Image bar;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -21,8 +19,5 @@ public class playerStrength : MonoBehaviour
         bar.fillAmount = (float)strenght / 10;
 
     }
-   
- 
-
     
 }

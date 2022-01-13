@@ -7,11 +7,14 @@ public class BreaksTheObject : MonoBehaviour
     public GameObject destroyedVersion;
     public GameObject player;
     public Animator animator;
+    public Rigidbody playerRigibody;
+    PlayerMovement playerMovementScript;
 
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerMovementScript = player.GetComponent<PlayerMovement>();
         
     }
     private void Update()
@@ -19,17 +22,18 @@ public class BreaksTheObject : MonoBehaviour
         if (player != null)
         {
             animator = player.GetComponentInChildren<Animator>();
+
         }
        
     }
     private void OnCollisionEnter(Collision collision)
     {
-            if (collision.gameObject.tag == "Player")
-            {
-                animator.SetTrigger("punch");
-                Instantiate(destroyedVersion, transform.position, Quaternion.identity);
-            }
-       
+        if (collision.gameObject.tag == "Player")
+        {
+            animator.SetTrigger("punch");
+            Instantiate(destroyedVersion, transform.position, Quaternion.identity);
+        }
+
     }
 
   

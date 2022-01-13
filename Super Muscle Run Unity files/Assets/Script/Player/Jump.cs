@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    public float jumpForce = 3f;
+    public float jumpForce = 5f;
     Rigidbody rb;
+
+   
 
     public AudioSource jumpAudio;
 
@@ -18,9 +20,10 @@ public class Jump : MonoBehaviour
     {
         if (collision.gameObject.tag == "Trampolin")
         {
-            rb.AddForce(transform.up * jumpForce);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             jumpAudio.Play();
 
         }
     }
+
 }
