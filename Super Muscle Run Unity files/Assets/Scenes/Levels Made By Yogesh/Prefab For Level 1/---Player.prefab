@@ -19011,7 +19011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e74badd2810c6c4b93709e1e7a5eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 350
+  jumpForce: 5
   jumpAudio: {fileID: 2923776400077203656}
 --- !u!136 &5445477625567532009
 CapsuleCollider:

@@ -24,7 +24,8 @@ public class decreaseStrenght : MonoBehaviour
                 other.gameObject.GetComponent<playerStrength>().strenght -= strengthValueToDecrease;
             }
             meshRenderer.enabled = false;
-            Instantiate(particleFX, transform.position, Quaternion.identity);
+            GameObject particle = Instantiate(particleFX, transform.position, Quaternion.identity);
+            Destroy(particle, 2f);
             Destroy(gameObject,1f);
         }
     }

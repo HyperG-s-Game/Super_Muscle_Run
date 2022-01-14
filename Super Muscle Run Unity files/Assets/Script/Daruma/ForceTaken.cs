@@ -12,6 +12,8 @@ public class ForceTaken : MonoBehaviour
     public GameObject player;
     public Animator animator;
 
+  
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();

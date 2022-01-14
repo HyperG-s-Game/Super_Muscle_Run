@@ -26,6 +26,10 @@ public class ExplodeForce : MonoBehaviour
         {
             //shake the camera
             cameraShakeScript.ShakeTheCamera();
+
+            //Vibrate the Mobile
+            Handheld.Vibrate();
+            Debug.Log("Vibrate");
         }
     }
 }
