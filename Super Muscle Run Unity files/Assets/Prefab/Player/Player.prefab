@@ -28719,6 +28719,7 @@ GameObject:
   - component: {fileID: 7545738501431217799}
   - component: {fileID: 7311486831891449555}
   - component: {fileID: 1066042305514903842}
+  - component: {fileID: 1575805587}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -28854,7 +28855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e74badd2810c6c4b93709e1e7a5eb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 350
+  jumpForce: 5
+  cameraShakeScript: {fileID: 0}
   jumpAudio: {fileID: 1066042305514903842}
 --- !u!136 &7911199456749347331
 CapsuleCollider:
@@ -28896,6 +28898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumRedCubeToChange: 1
   minimumGreenCubeToChange: 1
+  particleEffectForChaningTheModel: {fileID: 120410, guid: 6636b3078b0905e489f698a11b7a6b6b, type: 3}
 --- !u!82 &1066042305514903842
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28992,6 +28995,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1575805587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7809272859303094401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5995ade10675a4f4a865630a47140c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitingTimeToReEnableTheColliders: 0.8
 --- !u!1 &7824427433301976949
 GameObject:
   m_ObjectHideFlags: 0

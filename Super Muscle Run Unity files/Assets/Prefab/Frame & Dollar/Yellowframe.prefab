@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7714273479865283739}
   m_Layer: 0
   m_Name: Yellowframe
-  m_TagString: Untagged
+  m_TagString: RedCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,6 +282,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1916532592711141289}
     m_Modifications:
+    - target: {fileID: 1459986140730269667, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}
+      propertyPath: m_Size.z
+      value: 0.22583005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459986140730269667, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5518399554498231212, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -333,6 +341,10 @@ PrefabInstance:
     - target: {fileID: 5518399554498455436, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}
       propertyPath: m_Name
       value: Hamburger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518399554498455436, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0315f9ef70bf0a240b0d5135e690f187, type: 3}

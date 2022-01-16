@@ -20,17 +20,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = "Score : "+score.ToString();
-        
+        scoreText.text = "Score : " + score.ToString();
+        MoveHorizontal();
+        Die();
+    }
+
+    private void MoveHorizontal()
+    {
         //Give the value between -1 or 1 based on the button pressed
         float MoveHorizontal = Input.GetAxis("Horizontal") * speed;
-        
+
         MoveHorizontal *= Time.deltaTime;
 
         //Move the Player Left Right
         transform.Translate(MoveHorizontal, 0, 0);
+    }
 
-        if(transform.position.y <= -2f)
+    private void Die()
+    {
+        if (transform.position.y <= -2f)
         {
             //Restart the level
             gameFlowScript.Restart();

@@ -12,6 +12,8 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
     public int minimumRedCubeToChange = 3;
     public int minimumGreenCubeToChange = 3;
 
+    public GameObject particleEffectForChaningTheModel;
+
     private void Start()
     {
         switchCharacterScript = FindObjectOfType<SwitchCharacterScript>();
@@ -25,8 +27,10 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
             if (redCube == minimumRedCubeToChange) 
             {
                 print("triggered with red cube");
+                GameObject particle = Instantiate(particleEffectForChaningTheModel, transform.position, transform.rotation);
                 switchCharacterScript.Fat();
                 redCube = 0;
+                Destroy(particle, 1f);
             }
             
         }
@@ -36,8 +40,10 @@ public class ChangingThePlayerModelBasedOnTheStrenghtValue : MonoBehaviour
             if(greenCube == minimumGreenCubeToChange)
             {
                 print("triggered with green cube");
+                GameObject particle = Instantiate(particleEffectForChaningTheModel, transform.position, transform.rotation);
                 switchCharacterScript.Muscle();
                 greenCube = 0;
+                Destroy(particle, 1f);
             }
             
         }
