@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UseGravityOnCollision : MonoBehaviour
 {
+    //Get the player and animator
     public GameObject player;
     public Animator animator;
 
