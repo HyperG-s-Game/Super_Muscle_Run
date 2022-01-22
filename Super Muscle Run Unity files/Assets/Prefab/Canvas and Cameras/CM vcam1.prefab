@@ -76,15 +76,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0, y: 0, z: 0}
-  ShoulderOffset: {x: 0, y: 1.59, z: -5.14}
+  ShoulderOffset: {x: -7, y: 2.2, z: -11}
   VerticalArmLength: 2.4
-  CameraSide: 0
-  CameraDistance: -0.27
+  CameraSide: 0.391
+  CameraDistance: -4
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
   IgnoreTag: 
-  CameraRadius: 0.2
+  CameraRadius: 0.254
 --- !u!114 &1901150145
 MonoBehaviour:
   m_ObjectHideFlags: 0

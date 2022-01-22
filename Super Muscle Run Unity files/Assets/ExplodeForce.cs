@@ -6,12 +6,14 @@ public class ExplodeForce : MonoBehaviour
 {
     Rigidbody rb;
     CameraShake cameraShakeScript;
+    BoxCollider bc;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         cameraShakeScript = FindObjectOfType<CameraShake>();
+        bc = GetComponent<BoxCollider>();
     }
     private void FixedUpdate()
     {
@@ -30,6 +32,9 @@ public class ExplodeForce : MonoBehaviour
             //Vibrate the Mobile
             Handheld.Vibrate();
             Debug.Log("Vibrate");
+
+            //make it trigger
+            bc.isTrigger = true;
         }
     }
 }

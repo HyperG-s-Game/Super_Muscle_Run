@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3857837, y: 2.610646, z: 0.14617187}
-  m_Center: {x: 0.00000047683716, y: 0, z: -0.00000010430813}
+  m_Size: {x: 4.3857837, y: 2.610646, z: 1.8122039}
+  m_Center: {x: 0.00000047683716, y: 0, z: -0.83301616}
 --- !u!114 &1416121369823741299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,4 +126,4 @@ MonoBehaviour:
   destroyedVersion: {fileID: 518232839883702130, guid: d8830d44a26c85c41b2902afd2a880e8, type: 3}
   player: {fileID: 0}
   animator: {fileID: 0}
-  waitForPunch: 0.8
+  playerRigibody: {fileID: 0}

@@ -29,7 +29,6 @@ public class UseGravityOnCollision : MonoBehaviour
         {
             //trigger the PUNCH animation
             animator.SetTrigger("punch");
-            player.GetComponent<PlayerMovement>().enabled = false;
             StartCoroutine(WaitAndUseGravity());
             
         }
@@ -46,6 +45,5 @@ public class UseGravityOnCollision : MonoBehaviour
         disableAGameObjectOnThePrefabScript.DisableTheObject();
         gameObject.GetComponent<Rigidbody>().useGravity = true;
         gameObject.GetComponent<BoxCollider>().enabled = false;
-        player.GetComponent<PlayerMovement>().enabled = true;
     }
 }

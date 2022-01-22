@@ -8,6 +8,7 @@ public class Jump : MonoBehaviour
     Rigidbody rb;
 
     public CameraShake cameraShakeScript;
+    public float waitingTimeToShake = 0.8f;
    
 
     public AudioSource jumpAudio;
@@ -32,7 +33,7 @@ public class Jump : MonoBehaviour
 
     IEnumerator waitAndVibrate()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(waitingTimeToShake);
         //Vibrate the Mobile
         Handheld.Vibrate();
         Debug.Log("Vibrate");
